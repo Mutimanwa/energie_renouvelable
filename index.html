@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/logo.svg" type="image/x-icon">
+    <!-- styles personnalises -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <!-- styles -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <title>log</title>
+</head>
+
+<body>
+
+    <!-- navbar debut-->
+    <nav class="navbar navbar-expand-lg shadow-sm navbar-light bg-white border-bottom sticky-top">
+        <div class="container">
+            <a class="navbar-brand logo" href="#">
+                <img class="image" src="assets/img/logo.svg"></img>
+                <span class="text">log</span>
+            </a>
+
+            <!-- Bouton -->
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar">
+                <i class="fa-solid fa-ellipsis-vertical fs-2"></i>
+            </button>
+
+            <!-- Menu  -->
+
+            <div class="d-none d-lg-flex text-center">
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">A propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="publications" class="nav-link">Recherches</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="projects.html" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="blog.html" class="nav-link">Actualites /blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">contact</a>
+                    </li>
+                </ul>
+            </div>
+            <form class="d-none d-lg-flex">
+                <input class="form-control me-2 form-control-sm" type="search" placeholder="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+
+            <!-- Offcanvas -->
+            <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="offcanvasNavbar">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">A propos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="publications" class="nav-link">Recherches</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="projects.html" class="nav-link">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="blog.html" class="nav-link">Actualites /blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link">contact</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex mt-3">
+                        <input class="form-control me-2" type="search" placeholder="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar fin -->
+
+    <!-- hero debut -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h1 class="display-4 fw-bold">Dr. Élodie Dupont</h1>
+                    <h2 class="text-success">Chercheuse en Énergies Renouvelables</h2>
+                    <p class="fs-5">Ma mission est de faire progresser la compréhension et l'adoption des technologies
+                        énergétiques durables. À travers des recherches innovantes et la publication d'articles
+                        scientifiques, je m'engage à façonner un avenir plus vert pour notre planète.</p>
+                    <div>
+                        <button class="btn btn-success rounded-4">
+                            En savoir plus
+                        </button>
+                    </div>
+                </div>
+                <!-- image -->
+                <div class="col-sm-6">
+                    <img src="assets/img/Selection.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- hero fin -->
+
+    <!-- statistiques debut -->
+    <section class="statistique mt-5">
+        <div class="container py-5">
+            <div class="text-center">
+                <h2>Statistiques Clés des Énergies Renouvelables</h2>
+                <div class="row mt-3 g-2">
+                    <div class="col-sm-3">
+                        <div class="card border-0">
+                            <div class="card-body">
+                                <div class="d-block text-center align-items-center">
+                                    <!-- <span class="fa-solid fa-sun fs-4 m-1"></span> -->
+                                    <img src="assets/img/icons/icon-4.svg" class="m-2" alt="">
+                                    <h5> Croissance Énergie Solaire</h5>
+                                </div>
+                                <!-- contenue -->
+                                <p class="card-text">Capacité installée mondiale <br> (en GW).</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card border-0">
+                            <div class="card-body">
+                                <div class="d-block text-center align-items-center">
+                                    <!-- <span class="fa-solid fa-sun fs-4 m-1"></span> -->
+                                    <img src="assets/img/icons/icon-3.svg" class="m-2" alt="">
+                                    <h5> Part du Mix Énergétique</h5>
+                                </div>
+                                <p class="card-text">Répartition des sources d'énergie renouvelables.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card border-0">
+                            <div class="card-body">
+                                <div class="d-block text-center align-items-center">
+                                    <!-- <span class="fa-solid fa-sun fs-4 m-1"></span> -->
+                                    <img src="assets/img/icons/icon-1.svg" class="m-2" alt="">
+                                    <h5> Projets Actifs</h5>
+                                </div>
+                                <p class="card-text">Nombre de projets de recherche en cours.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card border-0">
+                            <div class="card-body">
+                                <div class="d-block text-center align-items-center">
+                                    <!-- <span class="fa-solid fa-sun fs-4 m-1"></span> -->
+                                    <img src="assets/img/icons/icons-2.svg" class="m-2" alt="">
+                                    <h5>Émissions CO2 Évitées</h5>
+                                </div>
+                                <p class="card-text">Impact mensuel de la recherche (en millions de tonnes).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- statistiques debut -->
+
+    <!-- publications -->
+    <section class="p-5">
+        <div class="container">
+            <div class="border-0 text-center p-3 rounded-4" style="background: #FAFAFBFF;">
+                <div class=" text-success">
+                    <h1 class="fw-semibold">Publications et Rapports</h1>
+                </div>
+                <p class="fs-">Explorez notre collection complète d'articles scientifiques et de rapports détaillés, reflétant nos
+                    recherches et contributions aux énergies renouvelables.</p>
+                <div>
+                    <a href="" class="btn btn-success">
+                        Découvrir toutes les recherches
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- publications -->
+
+    <!-- footer debut -->
+    <footer class="statistique py-5">
+        <div class="container py-3">
+            <div class="row g-2">
+                <div class=" col-lg-3 py-5">
+                    <!-- <div class="mb-2">
+                        <img src="assets/img/logo.svg" height="40px" alt="" class="">
+                        <span class="text fs-2">log</span>
+                    </div> -->
+                    <h5 class="fw-bold">Dr. Antoine Dubois</h5>
+                    <p>
+                        Chercheur en Énergie Renouvelable
+                    </p>
+                    <ul class="list-unstyled d-flex gap-2 ">
+
+                        <li>
+                            <a href="">
+                                <img style="fill: #52A366FF;" src="assets/img/icons/social-1.svg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img style="fill: #52A366FF;" src="assets/img/icons/social-2.svg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img style="fill: #52A366FF;" src="assets/img/icons/social.svg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- liens -->
+                <div class=" col-6 col-lg-4 offset-lg-1 mb-3">
+                    <h5 class="fw-bold">Liens Importants</h5>
+                    <ul class="list-unstyled">
+
+                        <li class="mb-2">
+                            <a href="" class="nav-link">Accueil</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="" class="nav-link">A propos</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="" class="nav-link">Recherches</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class=" col-6 col-lg-4 mb-3">
+                    <h5 class="fw-bold">Contact</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="" class="nav-link">
+                                <img src="" alt="">
+                                antoine.dubois@example.com
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="" class="nav-link">
+                                <i class="fab fa-instagram"></i>
+                                Instagram
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="" class="nav-link">
+                                <i class="fab fa-linkedin"></i>
+                                Linkedin
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="" class="nav-link">
+                                <i class="fab fa-youtube"></i>
+                                youtube
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer fin -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
