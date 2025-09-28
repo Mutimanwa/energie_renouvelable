@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/logo.svg" type="image/x-icon">
+    <!-- styles personnalises -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <!-- styles -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <title>log</title>
+</head>
+
+<body>
+
+    <!-- navbar debut-->
+    <nav class="navbar navbar-expand-lg shadow-sm navbar-light bg-white border-bottom sticky-top">
+        <div class="container">
+            <a class="navbar-brand logo" href="#">
+                <img class="image" src="assets/img/logo.svg"></img>
+                <span class="text">log</span>
+            </a>
+
+            <!-- Bouton -->
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar">
+                <i class="fa-solid fa-ellipsis-vertical fs-2"></i>
+            </button>
+
+            <!-- Menu  -->
+
+            <div class="d-none d-lg-flex text-center">
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">A propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="publications" class="nav-link">Recherches</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="projects.html" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="blog.html" class="nav-link">Actualites /blog</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="d-none d-lg-flex">
+                <a href="contact.html" class="btn btn-outline-success">Contact</a>
+            </div>
+
+            <!-- Offcanvas -->
+            <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="offcanvasNavbar">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">A propos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="publications" class="nav-link">Recherches</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="projects.html" class="nav-link">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="blog.html" class="nav-link">Actualites /blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link">contact</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex mt-3">
+
+                        <a href="contact.html" class="btn btn-outline-success w-100">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar fin -->
+
+    <!-- hero debut -->
+    <section class="py-lg-5">
+        <div class="container">
+            <div class="row gx-lg-5">
+                <div class="col-sm-6  py-lg-5 py-3">
+                    <h1 class="display-4 fw-bold">Dr. Élodie Dupont</h1>
+                    <h2 class="text-success">Chercheuse en Énergies Renouvelables</h2>
+                    <p class="fs-5">Passionné par la transition énergétique, je m'engage à développer des solutions
+                        innovantes pour un avenir durable. Mes recherches se concentrent sur l'optimisation des systèmes
+                        d'énergies renouvelables, l'intégration des technologies vertes et l'analyse de leur impact
+                        environnemental et socio-économique.</p>
+                    <div>
+                        <button class="btn btn-success rounded-4">
+                            Voir mes recherches
+                        </button>
+                    </div>
+                </div>
+                <!-- image -->
+                <div class="col-sm-6 ps-lg-5">
+                    <img src="assets/img/hero.png" alt="hero-image" width="384px"
+                        class="img-fluid border border-3 border-success ms-lg-5 rounded-circle">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- hero fin -->
+
+    <!-- parcours -->
+    <section class="py-lg-5 mt-4 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h1 class="fw-medium">Mon Parcours</h1>
+            </div>
+            <div class="row g-3">
+                <div class="col-lg-4">
+                    <div class="d-flex">
+                        <div class="col-auto">
+                            <div class="d-flex align-items-center justify-content-center mb-2">
+                                <img style="background: #008C2F1A;" src="assets/img/icons/icon-1.svg" alt=""
+                                    class="border p-2 rounded-circle">
+                            </div>
+                            <span class="text-success fw-semibold mt-3">2023-2024</span>
+                        </div>
+                        <div class="col ms-1 px-2">
+                            <h5 class="fw-medium">Publication Majeure</h5>
+                            <p class="text-muted">
+                                Article clé sur l'efficacité des panneaux solaires de nouvelle génération dans 'Journal
+                                of Renewable Energy'.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- parcours data -->
+                <div class="col-lg-4">
+                    <div class="d-flex">
+                        <div class="col-auto">
+                            <div class="d-flex align-items-center justify-content-center mb-2">
+                                <img style="background: #008C2F1A;" src="assets/img/icons/icon-1.svg" alt=""
+                                    class="border p-2 rounded-circle">
+                            </div>
+                            <span class="text-success fw-semibold mt-2">2018 - Aujourd'hui</span>
+                        </div>
+                        <div class="col ms-1 px-2">
+                            <h5 class="fw-medium">Chercheur Senior, Institut d'Énergies Durables</h5>
+                            <p class="text-muted">
+                                Article clé sur l'efficacité des panneaux solaires de nouvelle génération dans 'Journal
+                                of Renewable Energy'.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- parcours data -->
+                <div class="col-lg-4">
+                    <div class="d-flex">
+                        <div class="col-auto">
+                            <div class="d-flex align-items-center justify-content-center mb-2">
+                                <img style="background: #008C2F1A;" src="assets/img/icons/icon-1.svg" alt=""
+                                    class="border p-2 rounded-circle">
+                            </div>
+                            <span class="text-success fw-semibold mt-2">2015 - 2018</span>
+                        </div>
+                        <div class="col ms-1 px-2">
+                            <h5 class="fw-medium">Publication Majeure</h5>
+                            <p class="text-muted">
+                                Article clé sur l'efficacité des panneaux solaires de nouvelle génération dans 'Journal
+                                of Renewable Energy'.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- parcours data -->
+
+
+
+            </div>
+        </div>
+    </section>
+    <!-- parcours -->
+
+    <!-- mes dommaines -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center">
+                <h1>Mes Domaines d'Expertise</h1>
+            </div>
+            <div class="row g-3 py-lg-5">
+                <div class="col-lg-4">
+                    <div class="card border-0   shadow-sm">
+                        <div class="card-body">
+                            <div class="p-2 d-flex ">
+                                <img src="assets/img/icons/icon-1.svg" class="p-2 rounded bg-light" alt="domaine">
+                            </div>
+                            <h5 class="card-title fw-semibold">Photovoltaïque Avancé</h5>
+                            <p class="card-text text-muted">Recherche sur les cellules solaires pérovskites et les
+                                systèmes
+                                photovoltaïques hybrides.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- mes dommaines -->
+
+    <!-- approche scientifique -->
+    <section class="py-5 ">
+        <div class="container bg-light p-lg-5 p-3 rounded-3">
+            <div class="text-center">
+                <h1>Notre Approche Scientifique</h1>
+            </div>
+            <div class="row mx-lg-5 mx-1 mt-lg-5 mt-3 bg-white rounded-4 p-3">
+                <div class="col-sm-12">
+                    <div class="">
+                        <p class="fs-5">
+                            Notre laboratoire adopte une approche multidisciplinaire pour aborder les défis complexes de
+                            la transition énergétique. Nous combinons l'ingénierie avancée, la science des matériaux, la
+                            modélisation informatique et l'analyse systémique pour concevoir des solutions holistiques
+                            et durables.
+                        </p>
+                        <p class="fs-5">Nous mettons un accent particulier sur la recherche appliquée, visant à transformer les
+                            découvertes scientifiques en innovations concrètes. La collaboration avec des partenaires
+                            industriels et des institutions académiques internationales est au cœur de notre
+                            méthodologie, favorisant un échange de connaissances enrichissant et l'accélération du
+                            développement technologique.
+                        </p>
+                        <p class="fs-5">
+                            Chaque projet est mené avec une rigueur scientifique exemplaire, de la conceptualisation à
+                            l'évaluation d'impact, garantissant des résultats fiables et exploitables pour faire
+                            progresser le domaine des énergies renouvelables.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- apprroche scientifique -->
+
+    <!-- footer debut -->
+    <footer class="statistique py-5">
+        <div class="container py-3">
+            <div class="row g-2">
+
+                <div class=" col-lg-4 py-4">
+                    <!-- <div class="mb-2">
+                        <img src="assets/img/logo.svg" height="40px" alt="" class="">
+                        <span class="text fs-2">log</span>
+                    </div> -->
+                    <h5 class="fw-bold">Dr. Antoine Dubois</h5>
+                    <p>
+                        Chercheur en Énergie Renouvelable
+                    </p>
+                    <ul class="list-unstyled d-flex gap-2 ">
+
+                        <li>
+                            <a href="">
+                                <img style="fill: #52A366FF;" src="assets/img/icons/social-1.svg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img style="fill: #52A366FF;" src="assets/img/icons/social-2.svg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img style="fill: #52A366FF;" src="assets/img/icons/social.svg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- liens -->
+                <div class=" col-lg-2 offset-lg-  mb-3">
+                    <h5 class="fw-bold">Liens Importants</h5>
+                    <ul class="list-unstyled">
+
+                        <li class="mb-2">
+                            <a href="" class="nav-link">Accueil</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="" class="nav-link">A propos</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="" class="nav-link">Recherches</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="" class="nav-link">Projects</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="" class="nav-link">Actualités</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-5 offset-lg-1 mb-3 py-4">
+                    <h5 class="fw-bold">Contact</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="mailto:antoine.dubois@example.com" class="nav-link">
+                                <img src="assets/img/icons/contact.svg" class="icon me-1" alt="">
+                                antoine.dubois@example.com
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="" class="nav-link">
+                                <img src="assets/img/icons/contact-2.svg" alt="" class="icon me-1">
+                                +257 0000000
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="" class="nav-link">
+                                <img src="assets/img/icons/contact-1.svg" alt="" class="icon me-1">
+                                Université de l'Énergie Renouvelable, 75000 Paris, France
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center">
+                    <p>© 2023 Dr. Antoine Dubois. Tous droits réservés.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer fin -->
+
+    <!-- js -->
+    <script src="assets/js/cusom.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
