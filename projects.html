@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="fr" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/logo.svg" type="image/x-icon">
+    <!-- styles personnalises -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <!-- styles -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <title>Dr. A. Dubois</title>
+</head>
+
+<body>
+
+    <!-- navbar debut-->
+    <nav class="navbar navbar-expand-lg shadow-sm navbar-light bg-white border-bottom sticky-top">
+        <div class="container">
+            <a class="navbar-brand logo" href="#">
+                <img class="image" src="assets/img/logo.svg"></img>
+                <span class="text">Dr. A. Dubois</span>
+            </a>
+
+            <!-- Bouton -->
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar">
+                <i class="fa-solid fa-ellipsis-vertical fs-2"></i>
+            </button>
+
+            <!-- Menu  -->
+
+            <div class="d-none d-lg-flex text-center">
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">A propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="publication.html" class="nav-link">Recherches</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="projects.html" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="blog.html" class="nav-link">Actualites /blog</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="d-none d-lg-flex">
+                <a href="contact.html" class="btn btn-outline-success">Contact</a>
+            </div>
+
+            <!-- Offcanvas -->
+            <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="offcanvasNavbar">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">A propos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="publication.html" class="nav-link">Recherches</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="projects.html" class="nav-link">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="blog.html" class="nav-link">Actualites /blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link">contact</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex mt-3">
+
+                        <a href="contact.html" class="btn btn-outline-success w-100">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar fin -->
+
+
+    <!-- intro -->
+    <section class="p-5">
+        <div class="container">
+            <div class="row">
+                <div class="col align-self-center">
+                    <div class=" text-center p-lg-3 py-lg-5 rounded-4">
+                        <div class="text-success">
+                            <h1 class="fw-semibold display-lg-5 mb-3">Nos Projets de Recherche</h1>
+                        </div>
+                        <div class="px-lg-5 d-flex justify-content-center">
+                            <p style="font-size: 20px;" class="px-lg-5">Découvrez nos initiatives pionnières dans les
+                                énergies
+                                renouvelables, du
+                                solaire à l'éolien, en passant par la biomasse, pour un avenir durable.
+                            </p>
+                        </div>
+
+                        <div>
+                            <a href="" class="btn btn-success">
+                                Découvrir toutes les recherches
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- intro -->
+
+    <!-- defille des tags -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Défilement des tags -->
+                <div class="tag-container">
+                    <button class="scroll-btn left">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+
+                    <div class="tag-scroll-wrapper">
+                        <div class="tag">
+                            <div class="tag-item active" data-filter="all">
+                                Tous les Projets
+                            </div>
+                            <div class="tag-item" data-filter="solaire">
+                                Solaire
+                            </div>
+                            <div class="tag-item" data-filter="eolien">
+                                Éolien
+                            </div>
+                            <div class="tag-item" data-filter="hydraulique">
+                                Hydraulique
+                            </div>
+                            <div class="tag-item" data-filter="biomasse">
+                                Biomasse
+                            </div>
+                            <div class="tag-item" data-filter="geothermie">
+                                Géothermie
+                            </div>
+                            <div class="tag-item" data-filter="stockage">
+                                Stockage d'énergie
+                            </div>
+                            <div class="tag-item" data-filter="efficacite">
+                                Efficacité énergétique
+                            </div>
+                            <div class="tag-item" data-filter="innovation">
+                                Innovation
+                            </div>
+                            <div class="tag-item" data-filter="international">
+                                Projets internationaux
+                            </div>
+                            <div class="tag-item" data-filter="urbain">
+                                Solutions urbaines
+                            </div>
+                            <div class="tag-item" data-filter="rural">
+                                Solutions rurales
+                            </div>
+                            <div class="tag-item" data-filter="resilience">
+                                Résilience climatique
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="scroll-btn right">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <!-- Fin défilement des tags -->
+            </div>
+        </div>
+    </section>
+    <!-- defille des tags -->
+
+    <!-- projects -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-3">
+                <div class="col-sm-4">
+                    <div data-tags="solaire stockage innovation international" class="project-card card border-0 shadow-sm rounded">
+                        <div class="ratio ratio-16x9 overflow-hidden ">
+                            <img src="assets/img/projects/04.png" class="img-fluid" alt="...">
+
+                        </div>
+                        <span class="badge bg-success position-absolute p-2 fs-5px end-0 me-3 mt-3 rounded-4">En
+                            cours</span>
+
+                        <div class="card-body">
+                            <h4 class="card-title">Optimisation des Panneaux Solaires Perovskites</h4>
+                            <p class="card-text line-clamp-3">Recherche visant à améliorer l'efficacité et la stabilité
+                                des cellules
+                                solaires à base de pérovskite, une technologie</p>
+
+                            <div>
+                                <span class="badge bg-secondary">Solaire</span>
+                                <span class="badge bg-secondary">Solaire</span>
+                                <span class="badge bg-secondary">Solaire</span>
+                            </div>
+                            <div class="my-2">
+                                <a href="#" class="btn btn-success w-100">Voir les détails</a>
+                            </div>
+                        </div>
+                    </div>
+
+                   
+                </div>
+                 <!-- reponse -->
+                 <div class=" not-found  d-none">
+                    <h5 class="text-center">Aucun element corespondant</h5>
+                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- projects -->
+
+    <!-- collaborations -->
+    <section class="p-5">
+        <div class="container">
+            <div class=" text-center p-3 py-5 rounded-4 statistique">
+                <div class="">
+                    <h1 class="fw-semibold display-5 mb-3">Envie de Collaborer ?</h1>
+                </div>
+                <div class="px-lg-5 d-flex justify-content-center">
+                    <p class="px-lg-5" style="font-size: 20px;">Si nos projets résonnent avec vos recherches ou votre
+                        organisation, n'hésitez pas
+                        à nous contacter pour explorer des partenariats.
+                    </p>
+                </div>
+
+                <div>
+                    <a href="" class="btn btn-success">
+                        Contactez-nous
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- collaborations -->
+
+    <!-- footer debut -->
+  <footer class="bg-dark text-white py-5">
+    <div class="container py-4">
+        <div class="row g-4">
+            <!-- Présentation -->
+            <div class="col-lg-4">
+                <h5 class="fw-bold mb-3">Dr. Antoine Dubois</h5>
+                <p class="mb-4">Chercheur spécialisé en énergies renouvelables et transition énergétique.</p>
+                <div class="d-flex gap-3">
+                    <a href="#" class="text-white-50 hover-white" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in fa-lg"></i>
+                    </a>
+                    <a href="#" class="text-white-50 hover-white" aria-label="Twitter">
+                        <i class="fab fa-twitter fa-lg"></i>
+                    </a>
+                    <a href="#" class="text-white-50 hover-white" aria-label="Google Scholar">
+                        <i class="fas fa-graduation-cap fa-lg"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Liens rapides -->
+            <div class="col-lg-2">
+                <h5 class="fw-bold mb-3">Navigation</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="index.html" class="text-white-50 text-decoration-none hover-white">Accueil</a></li>
+                    <li class="mb-2"><a href="about.html" class="text-white-50 text-decoration-none hover-white">À propos</a></li>
+                    <li class="mb-2"><a href="publication.html" class="text-white-50 text-decoration-none hover-white">Recherches</a></li>
+                    <li class="mb-2"><a href="projects.html" class="text-white-50 text-decoration-none hover-white">Projets</a></li>
+                    <li class="mb-2"><a href="blog.html" class="text-white-50 text-decoration-none hover-white">Blog</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div class="col-lg-5 offset-lg-1">
+                <h5 class="fw-bold mb-3">Contact</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2">
+                        <a href="mailto:antoine.dubois@example.com" class="text-white-50 text-decoration-none hover-white d-flex align-items-center">
+                            <i class="far fa-envelope me-3"></i>
+                            antoine.dubois@example.com
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="tel:+2570000000" class="text-white-50 text-decoration-none hover-white d-flex align-items-center">
+                            <i class="fas fa-phone me-3"></i>
+                            +257 00 00 00
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <span class="text-white-50 d-flex align-items-start">
+                            <i class="fas fa-map-marker-alt me-3 mt-1"></i>
+                            Université de l'Énergie Renouvelable<br>75000 Paris, France
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <hr class="my-4 border-secondary">
+        
+        <div class="row align-items-center">
+            <div class="col-md-6 text-center text-md-start">
+                <p class="mb-0">© 2024 Dr. Antoine Dubois. Tous droits réservés.</p>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+                <a href="mentions-legales.html" class="text-white-50 text-decoration-none hover-white me-3">Mentions légales</a>
+                <a href="confidentialite.html" class="text-white-50 text-decoration-none hover-white">Politique de confidentialité</a>
+            </div>
+        </div>
+    </div>
+</footer>
+    <!-- footer fin -->
+
+    <!-- js -->
+    <script src="assets/js/cusom.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
