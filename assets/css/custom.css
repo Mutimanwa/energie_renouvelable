@@ -23,10 +23,10 @@ body {
 }
 
 .fs-18{
-  font-size: 18px; 
+  font-size: 16px; 
   line-height: 29px; 
-  font-weight: 400; 
-  color: #171A1FFF;
+  font-weight: 400;  
+  /* color: #171A1FFF; */
 }
 
 /* h1, h2, h3, h4, h5, h6 {
@@ -98,8 +98,8 @@ body {
 
   /* Style lien actif */
   .nav-link {
-    color: #1e1f1f !important;
-    font-weight: 600;
+    color: #f7fafa !important;
+    font-weight: 400;
   }
   .nav-link.active{
     color: #198754 !important;
@@ -163,7 +163,7 @@ body {
 }
 
 .tag-item {
-  background-color: white;
+  /* background-color: white; */
   padding: 10px 20px;
   border-radius: 30px;
   cursor: pointer;
@@ -189,7 +189,7 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: white;
+  /* background: white; */
   border: none;
   width: 40px;
   height: 40px;
@@ -303,6 +303,12 @@ body {
   
   .tag-scroll-wrapper {
       padding: 10px 5px;
+  }
+}
+
+@media (max-width: 560px) {
+  .fs-5px{
+    font-size: 16px;
   }
 }
 

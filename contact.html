@@ -23,17 +23,18 @@
 <body>
 
     <!-- navbar debut-->
-    <nav class="navbar navbar-expand-lg shadow-sm navbar-light bg-white border-bottom sticky-top">
-        <div class="container">
-            <a class="navbar-brand logo d-flex align-items-center" href="index.html">
-                <img class="image me-2" src="assets/img/logo.svg" alt="Logo Dr. Antoine Dubois" height="40">
-                <span class="text fw-bold">Dr. A. Dubois</span>
+    <nav class="navbar navbar-expand-lg shadow navbar-light bg-body border border-success rounded-pill m-1 sticky-top">
+        <div class="container ">
+            <a class="navbar-brand logo" href="#">
+                <img class="image" src="assets/img/logo.svg"></img>
+                <span class="text">Dr. A. Dubois</span>
             </a>
 
             <!-- Bouton -->
             <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasNavbar">
                 <i class="fa-solid fa-ellipsis-vertical fs-2"></i>
+                <!-- <span class="navbar-toggler-icon" ></span> -->
             </button>
 
             <!-- Menu  -->
@@ -50,16 +51,20 @@
                     <li class="nav-item">
                         <a href="publication.html" class="nav-link">Recherches</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a href="projects.html" class="nav-link">Projects</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a href="blog.html" class="nav-link">Actualites /blog</a>
                     </li>
                 </ul>
             </div>
             <div class="d-none d-lg-flex">
-                <a href="contact.html" class="btn btn-outline-success">Contact</a>
+                <a href="contact.html" class="btn btn-outline-success rounded-pill">
+                    <i class="ms-2 fas fa-phone"></i>
+                    contact
+                    
+                </a>
             </div>
 
             <!-- Offcanvas -->
@@ -85,13 +90,15 @@
                         <li class="nav-item">
                             <a href="blog.html" class="nav-link">Actualites /blog</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="contact.html" class="nav-link">contact</a>
-                        </li>
                     </ul>
                     <div class="d-flex mt-3">
-
                         <a href="contact.html" class="btn btn-outline-success w-100">Contact</a>
+                    </div>
+                    <div class="position-absolute bottom-0">
+                        <div class="d-flex justify-content-center">
+                            <p class="" style="margin-left: 7rem;">Made by <a href="mailto:calvinmutimanwa9@gmail.com" target="_blank" class=" btn-link">calvindev</a> </p>
+                        </div>
+                        
                     </div>
                 </div>
             </div>

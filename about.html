@@ -23,8 +23,8 @@
 <body>
 
     <!-- navbar debut-->
-    <nav class="navbar navbar-expand-lg shadow-sm navbar-light bg-white border-bottom sticky-top">
-        <div class="container">
+    <nav class="navbar navbar-expand-lg shadow navbar-light bg-body border border-success rounded-pill m-1 sticky-top">
+        <div class="container ">
             <a class="navbar-brand logo" href="#">
                 <img class="image" src="assets/img/logo.svg"></img>
                 <span class="text">Dr. A. Dubois</span>
@@ -34,6 +34,7 @@
             <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasNavbar">
                 <i class="fa-solid fa-ellipsis-vertical fs-2"></i>
+                <!-- <span class="navbar-toggler-icon" ></span> -->
             </button>
 
             <!-- Menu  -->
@@ -50,16 +51,20 @@
                     <li class="nav-item">
                         <a href="publication.html" class="nav-link">Recherches</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a href="projects.html" class="nav-link">Projects</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a href="blog.html" class="nav-link">Actualites /blog</a>
                     </li>
                 </ul>
             </div>
             <div class="d-none d-lg-flex">
-                <a href="contact.html" class="btn btn-outline-success">Contact</a>
+                <a href="contact.html" class="btn btn-outline-success rounded-pill">
+                    <i class="ms-2 fas fa-phone"></i>
+                    contact
+                    
+                </a>
             </div>
 
             <!-- Offcanvas -->
@@ -85,13 +90,15 @@
                         <li class="nav-item">
                             <a href="blog.html" class="nav-link">Actualites /blog</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="contact.html" class="nav-link">contact</a>
-                        </li>
                     </ul>
                     <div class="d-flex mt-3">
-
                         <a href="contact.html" class="btn btn-outline-success w-100">Contact</a>
+                    </div>
+                    <div class="position-absolute bottom-0">
+                        <div class="d-flex justify-content-center">
+                            <p class="" style="margin-left: 7rem;">Made by <a href="mailto:calvinmutimanwa9@gmail.com" target="_blank" class=" btn-link">calvindev</a> </p>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -104,14 +111,14 @@
         <div class="container">
             <div class="row gx-lg-5">
 
-                <div class="col-lg-6 ps-lg-5 d-none mt-3 d-sm-flex justify-content-center ">
+                <div class="col-lg-6 ps-lg-5  mt-3 d-flex d-lg-none justify-content-center ">
                     <img src="assets/img/hero.png" alt="hero-image" width="384px"
                         class="img-fluid border border-3 border-success ms-lg-5 rounded-circle">
                 </div>
                 <div class="col-lg-6 py-lg-5 py-3">
-                    <h1 class="display-4 fw-bold text-sm-center">Dr. Élodie Dupont</h1>
-                    <h2 class="text-success">Chercheuse en Énergies Renouvelables</h2>
-                    <p class="fs-5">Passionné par la transition énergétique, je m'engage à développer des solutions
+                    <h1 class="display-lg-4 fw-bold text-center text-lg-start">Dr. Élodie Dupont</h1>
+                    <h5 class="text-success">Chercheuse en Énergies Renouvelables</h5>
+                    <p class="fs-18">Passionné par la transition énergétique, je m'engage à développer des solutions
                         innovantes pour un avenir durable. Mes recherches se concentrent sur l'optimisation des systèmes
                         d'énergies renouvelables, l'intégration des technologies vertes et l'analyse de leur impact
                         environnemental et socio-économique.</p>
@@ -122,7 +129,7 @@
                     </div>
                 </div>
                 <!-- image -->
-                <div class="col-lg-6 ps-lg-5 d-none d-sm-none">
+                <div class="col-lg-6 ps-lg-5 d-none d-lg-flex">
                     <img src="assets/img/hero.png" alt="hero-image" width="384px"
                         class="img-fluid border border-3 border-success ms-lg-5 rounded-circle">
                 </div>
@@ -132,7 +139,7 @@
     <!-- hero fin -->
 
     <!-- parcours -->
-    <section class="py-lg-5 mt-4 bg-light">
+    <section class="py-lg-5 mt-4 bg-publication">
         <div class="container">
             <div class="text-center mb-5">
                 <h1 class="fw-medium">Mon Parcours</h1>
@@ -140,14 +147,14 @@
             <div class="row g-3">
                 <div class="col-lg-4">
                     <div class="d-flex">
-                        <div class="col-auto">
+                        <div class="col-lg-auto">
                             <div class="d-flex align-items-center justify-content-center mb-2">
                                 <img style="background: #008C2F1A;" src="assets/img/icons/icon-1.svg" alt=""
                                     class="border p-2 rounded-circle">
                             </div>
                             <span class="text-success fw-semibold mt-3">2023-2024</span>
                         </div>
-                        <div class="col ms-1 px-2">
+                        <div class="col-lg ms-1 px-2">
                             <h5 class="fw-medium">Publication Majeure</h5>
                             <p class="text-muted">
                                 Article clé sur l'efficacité des panneaux solaires de nouvelle génération dans 'Journal
@@ -159,15 +166,15 @@
                 <!-- parcours data -->
                 <div class="col-lg-4">
                     <div class="d-flex">
-                        <div class="col-auto">
+                        <div class="col-lg-auto">
                             <div class="d-flex align-items-center justify-content-center mb-2">
                                 <img style="background: #008C2F1A;" src="assets/img/icons/icon-1.svg" alt=""
                                     class="border p-2 rounded-circle">
                             </div>
-                            <span class="text-success fw-semibold mt-2">2018 - Aujourd'hui</span>
+                            <span class="text-success fw-semibold mt-2 text-center">2018 - Aujourd'hui</span>
                         </div>
-                        <div class="col ms-1 px-2">
-                            <h5 class="fw-medium">Chercheur Senior, Institut d'Énergies Durables</h5>
+                        <div class="col-lg ms-1 px-2">
+                            <h5 class="fw-medium ">Chercheur Senior, Institut d'Énergies Durables</h5>
                             <p class="text-muted">
                                 Article clé sur l'efficacité des panneaux solaires de nouvelle génération dans 'Journal
                                 of Renewable Energy'.
@@ -232,11 +239,11 @@
 
     <!-- approche scientifique -->
     <section class="py-5 ">
-        <div class="container bg-light p-lg-5 p-3 rounded-3">
+        <div class="container bg-publication p-lg-5 p-3 rounded-3">
             <div class="text-center">
                 <h1>Notre Approche Scientifique</h1>
             </div>
-            <div class="row mx-lg-5 mx-1 mt-lg-5 mt-3 bg-white rounded-4 p-3">
+            <div class="row mx-lg-5 mx-1 mt-lg-5 mt-3 bg-body rounded-4 p-3">
                 <div class="col-sm-12">
                     <div class="">
                         <p class="fs-5px">
